@@ -1,14 +1,14 @@
-package com.unoveo;
+package com.unoveo.model;
 
-public class Button {
+public class InputModel {
 
     String type;
     String value;
 
-    public Button() {
+    public InputModel() {
     }
 
-    public Button(String type, String value) {
+    public InputModel(String type, String value) {
         this.type = type;
         this.value = value;
     }

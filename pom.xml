@@ -27,26 +27,27 @@
       <artifactId>gson</artifactId>
       <version>2.10.1</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-<!--    <dependency>-->
-<!--      <groupId>com.fasterxml.jackson.core</groupId>-->
-<!--      <artifactId>jackson-databind</artifactId>-->
-<!--      <version>2.15.2</version>-->
-<!--    </dependency>-->
-
-
+    <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1.1</version>
+    </dependency>
   </dependencies>
+
+
+  <filter-mapping>
+    <filter-name>CorsFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   <build>
     <finalName>BackEndService</finalName>
-
             <plugins>
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
               </plugin>
-
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
